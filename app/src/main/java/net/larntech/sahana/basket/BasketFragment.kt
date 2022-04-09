@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.ItemTouchHelper
@@ -19,6 +21,7 @@ import net.larntech.sahana.model.WishListModel
 import net.larntech.sahana.viewmodel.AppViewModel
 import net.larntech.sahana.wishlist.RecyclerItemTouchHelper
 import net.larntech.sahana.wishlist.WishListAdapter
+import java.math.BigDecimal
 
 class BasketFragment: Fragment(), BucketListAdapter.clickedListener, BasketRecyclerItemTouchHelper.RecyclerItemTouchHelperListener {
 
@@ -26,6 +29,9 @@ class BasketFragment: Fragment(), BucketListAdapter.clickedListener, BasketRecyc
     private lateinit var basketList: MutableList<CatalogueModel.ProductsBean>
 
     private lateinit var noData: TextView
+    private lateinit var totalPrice: TextView
+    private lateinit var llCheckOut: CardView
+    private lateinit var btnCheckOut: Button
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var bucketListAdapter: BucketListAdapter
@@ -45,10 +51,23 @@ class BasketFragment: Fragment(), BucketListAdapter.clickedListener, BasketRecyc
                               savedInstanceState: Bundle?): View? {
         val view =  inflater.inflate(R.layout.frag_basket, container, false)
         recyclerView = view.findViewById(R.id.rvRecyclerV)
+        totalPrice = view.findViewById(R.id.totalPrice)
+        llCheckOut = view.findViewById(R.id.llCheckOut)
         noData = view.findViewById(R.id.noData)
+        btnCheckOut = view.findViewById(R.id.btnCheckOut)
 
         initData()
+        clickListener()
         return view;
+    }
+
+    private fun clickListener(){
+        btnCheckOut.setOnClickListener {
+            basketList.clear()
+            viewModel.checkOut()
+            bucketListAdapter.notifyDataSetChanged()
+            checkViews()
+        }
     }
 
     private fun initData(){
@@ -76,14 +95,25 @@ class BasketFragment: Fragment(), BucketListAdapter.clickedListener, BasketRecyc
     private fun checkViews(){
         if(basketList.size > 0){
             noData.visibility = View.GONE
+            llCheckOut.visibility = View.VISIBLE
+            setCartPrice()
         }else{
             noData.visibility = View.VISIBLE
+            llCheckOut.visibility = View.GONE
+
 
         }
     }
 
 
+    private fun setCartPrice(){
+        var total: Double = 0.0
+        for(catelog in basketList){
+            total += catelog.price
+        }
 
+        totalPrice.text = "$$total"
+    }
 
 
 

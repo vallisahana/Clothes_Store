@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         navigationView = findViewById(R.id.activity_main_bottom_navigation_view)
         toolbar = findViewById(R.id.toolbar)
         navigationView.setOnItemSelectedListener(selectedListener)
+
         handleViewModel()
         seearchCatalogue();
         setToolBar()
@@ -81,26 +82,63 @@ class MainActivity : AppCompatActivity() {
         viewModel.addCatalogueAddWishList.observe(this){
             if(it != null) {
                 wishList.add(it)
+                updateBasketList()
+                updateWishList()
             }
         }
         viewModel.addCatalogueBucketList.observe(this){
             if(it != null) {
                 basketListModel.add(it)
+                updateBasketList()
+                updateWishList()
             }
         }
 
         viewModel.removeCatalogueAddWishList.observe(this){
             if(it != null){
                 wishList.remove(it)
+                updateBasketList()
+                updateWishList()
             }
         }
 
         viewModel.removeCatalogueBucketList.observe(this){
             if(it != null){
                 removeFromBucket(it)
+                updateBasketList()
+                updateWishList()
             }
         }
 
+        viewModel.checkOutCatalogue.observe(this){
+            if(it){
+                basketListModel.clear()
+                updateBasketList()
+                updateWishList()
+            }
+        }
+
+
+    }
+
+
+    private fun updateBasketList(){
+        if(basketListModel.size > 0) {
+            navigationView.getOrCreateBadge(R.id.miBasket).isVisible = true
+            navigationView.getOrCreateBadge(R.id.miBasket).number = basketListModel.size;
+        }else{
+            navigationView.getOrCreateBadge(R.id.miBasket).isVisible = false
+        }
+    }
+
+    private fun updateWishList() {
+        if (wishList.size > 0) {
+
+            navigationView.getOrCreateBadge(R.id.miWishList).isVisible = true
+            navigationView.getOrCreateBadge(R.id.miWishList).number = wishList.size
+        }else{
+            navigationView.getOrCreateBadge(R.id.miWishList).isVisible = false
+        }
 
     }
 

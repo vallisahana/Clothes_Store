@@ -44,6 +44,9 @@ class AppViewModel: ViewModel() {
     private val catalogueResponseMessage = MutableLiveData<String>()
     val searchCatalogueMessage: LiveData<String> get() = catalogueResponseMessage;
 
+    private val catalogueCheckOut = MutableLiveData<Boolean>()
+    val checkOutCatalogue: LiveData<Boolean> get() = catalogueCheckOut;
+
 
     fun getAllCatalogue() {
         val catalogueModelList: Call<CatalogueModel> =
@@ -98,4 +101,10 @@ class AppViewModel: ViewModel() {
     fun setWishList(catalogueModel: List<CatalogueModel.ProductsBean>){
         mutableWishList.postValue(catalogueModel)
     }
+
+
+    fun checkOut(){
+        catalogueCheckOut.postValue(true)
+    }
+
 }
