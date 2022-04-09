@@ -118,9 +118,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
     }
-
 
     private fun updateBasketList(){
         if(basketListModel.size > 0) {
