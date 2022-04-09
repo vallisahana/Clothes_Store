@@ -129,6 +129,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+
     private fun updateWishList() {
         if (wishList.size > 0) {
 
