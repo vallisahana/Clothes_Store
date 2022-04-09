@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Catalogue</string>
+
+    <string name="catalogue">CATALOGUE</string>
+    <string name="wishlist">WISHLIST</string>
+    <string name="basket">BASKET</string>
+</resources>

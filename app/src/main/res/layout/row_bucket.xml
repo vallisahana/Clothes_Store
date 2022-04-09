@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/round_bg">
+
+            <ImageView
+                android:id="@+id/ivCatalogue"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:text="Red Shirt"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="15dp"
+            android:text="7:00"
+            android:gravity="bottom"
+            android:textColor="@color/accentColor"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_margin="5dp"
+            app:tint="@color/accentColor"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_add_shopping_cart_24"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/rvBg_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="0dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivCatalogue"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="120dp"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:text="Name"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_below="@+id/ivCatalogue"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:text="1.0"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="2dp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvName"
+            android:layout_height="wrap_content"
+            />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/tvPrice">
+
+            <View
+                android:id="@+id/viewSeperator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/rvBg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_baseline_heart_broken_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewSeperator"
+                app:tint="@color/accentColor" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_baseline_emoji_events_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewSeperator"
+                app:tint="@color/gray" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

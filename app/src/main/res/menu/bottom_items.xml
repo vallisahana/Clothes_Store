@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/catalogue"
+        android:icon="@drawable/ic_baseline_image_search_24"
+        android:id="@+id/miCatalogue"/>
+
+    <item
+        android:title="@string/wishlist"
+        android:icon="@drawable/ic_baseline_heart_broken_24"
+        android:id="@+id/miWishList"/>
+
+    <item
+        android:title="@string/basket"
+        android:icon="@drawable/ic_baseline_emoji_events_24"
+        android:id="@+id/miBasket"/>
+
+
+
+</menu>
