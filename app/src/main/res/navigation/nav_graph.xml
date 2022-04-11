@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catelogueFragment">
+    <fragment
+        android:id="@+id/catelogueFragment"
+        android:name="net.example.clothes.catalogue.CatelogueFragment"
+        android:label="CatelogueFragment" />
+    <fragment
+        android:id="@+id/wishListFragment"
+        android:name="net.example.clothes.wishlist.WishListFragment"
+        android:label="WishListFragment" />
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="net.example.clothes.basket.BasketFragment"
+        android:label="BasketFragment" />
+</navigation>
