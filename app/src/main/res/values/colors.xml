@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_500">#74b5d6</color>
+    <color name="purple_700">#74b5d6</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
@@ -12,5 +12,23 @@
     <color name="accentColor">#FFF44336</color>
     <color name="rvBg">#e8f5e9</color>
     <color name="rvBg_view">#E1EDE2</color>
+    <color name="bg_screen1">#2195f2</color>
+    <color name="bg_screen2">#e74c3c</color>
+    <color name="bg_screen3">#9b59b6</color>
+    <color name="bg_screen4">#1abc9c</color>
+
+    <array name="array_dot_active">
+        <item>#6A89CC</item>
+        <item>#E55039</item>
+        <item>#82CCDD</item>
+        <item>#38ADA9</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>#2980B9</item>
+        <item>#C0392B</item>
+        <item>#8E44AD</item>
+        <item>#27AE60</item>
+    </array>
 
 </resources>

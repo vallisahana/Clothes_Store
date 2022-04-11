@@ -3,6 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/drawable-v24/background_round_bg_curved.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/drawable-v24/ic_baseline_shopping_cart_24.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/drawable/ic_baseline_add_shopping_cart_24.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/drawable/ic_baseline_emoji_events_24.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/drawable/ic_outline_close_24.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/activity_splash.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/activity_welcome.xml" value="0.1734375" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/frag_basket.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/frag_catalogue.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/frag_wishlist.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/product_details.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/row_backet.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/row_bucket.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/row_catalogue.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/row_wishlist.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/layout/welcome_slide1.xml" value="0.1875" />
+        <entry key="..\:/Users/91701/Downloads/sahana/app/src/main/res/menu/bottom_items.xml" value="0.1875" />
         <entry key="app/src/main/res/drawable-v24/background_curved_gray.xml" value="0.236" />
         <entry key="app/src/main/res/drawable-v24/background_round_bg_curved.xml" value="0.236" />
         <entry key="app/src/main/res/drawable/active_tab_color.xml" value="0.236" />
@@ -22,7 +43,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

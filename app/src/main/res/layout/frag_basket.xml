@@ -33,7 +33,7 @@
     <TextView
         android:id="@+id/noData"
         android:layout_width="wrap_content"
-        android:text="Add products to your basket"
+        android:text="@string/add_products_to_your_basket"
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/accentColor"
         android:textStyle="italic"

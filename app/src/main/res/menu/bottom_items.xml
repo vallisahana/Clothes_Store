@@ -13,7 +13,7 @@
 
     <item
         android:title="@string/basket"
-        android:icon="@drawable/ic_baseline_emoji_events_24"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
         android:id="@+id/miBasket"/>
 
 

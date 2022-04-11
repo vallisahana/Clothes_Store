@@ -1,7 +1,26 @@
 <resources>
-    <string name="app_name">Catalogue</string>
+    <string name="app_name">Clothes Store</string>
 
     <string name="catalogue">CATALOGUE</string>
     <string name="wishlist">WISHLIST</string>
     <string name="basket">BASKET</string>
+    <string name="add_products_to_your_basket">Add products to your basket</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="slide_1_title">Let us get Comfy</string>
+    <string name="slide_1_desc">100% natural linen, offering quality comfort from the tropics to town !</string>
+
+    <string name="slide_2_title">Cheap Rates</string>
+    <string name="slide_2_desc">Products at such an affordable rates !</string>
+
+    <string name="slide_3_title">Hassle Free Payments</string>
+    <string name="slide_3_desc">With various pay options , you can easily pay in a minute !</string>
+
+    <string name="slide_4_title">Fast Delivery</string>
+    <string name="slide_4_desc">Blazing fast order delivery within time !</string>
+    <string name="start">start</string>
+
+
+
+
 </resources>
