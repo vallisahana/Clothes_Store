@@ -1,11 +1,11 @@
 # Clothes Store
 
-An e-commerce android application written in Kotlin.
+An e-commerce Android application written in Kotlin.
 
 # Android components
 
 * RecyclerViewAdapter
-* Rest api
+* REST API
 * Jetpack compose 
 * MVVM 
 * Glide
